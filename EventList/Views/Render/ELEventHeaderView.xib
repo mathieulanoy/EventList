@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ELEventHeaderView" id="U6b-Vx-4bR" customClass="ELEventHeaderView" customModule="EventList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="30"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B47-Ey-2IC">
+                    <rect key="frame" x="8" y="5" width="304" height="20"/>
+                    <constraints>
+                        <constraint firstAttribute="height" priority="750" constant="16" id="JMd-iI-1yB"/>
+                        <constraint firstAttribute="width" priority="750" constant="75" id="mj4-be-c36"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z3J-dB-yDW">
+                    <rect key="frame" x="8" y="0.0" width="304" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="E71-MD-JYJ"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3mB-jT-i7w">
+                    <rect key="frame" x="8" y="29" width="304" height="1"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="Ftx-Mz-lNN"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="3mB-jT-i7w" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="LxS-2k-vTk"/>
+                <constraint firstAttribute="bottom" secondItem="B47-Ey-2IC" secondAttribute="bottom" priority="999" constant="5" id="MUk-9u-hfM"/>
+                <constraint firstAttribute="bottom" secondItem="3mB-jT-i7w" secondAttribute="bottom" id="NZQ-ff-arI"/>
+                <constraint firstAttribute="trailing" secondItem="3mB-jT-i7w" secondAttribute="trailing" constant="8" id="SEs-PK-URB"/>
+                <constraint firstItem="z3J-dB-yDW" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="Vjk-wb-JOe"/>
+                <constraint firstItem="z3J-dB-yDW" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="bWy-bS-J57"/>
+                <constraint firstAttribute="trailing" secondItem="B47-Ey-2IC" secondAttribute="trailing" priority="999" constant="8" id="d12-M1-VVi"/>
+                <constraint firstItem="B47-Ey-2IC" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" priority="750" id="fZD-ZR-jbh"/>
+                <constraint firstItem="B47-Ey-2IC" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" priority="999" constant="5" id="gq5-xp-Nf8"/>
+                <constraint firstAttribute="trailing" secondItem="z3J-dB-yDW" secondAttribute="trailing" constant="8" id="lEP-HG-ry6"/>
+                <constraint firstItem="B47-Ey-2IC" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" constant="8" id="q0r-79-K45"/>
+            </constraints>
+            <connections>
+                <outlet property="lb_title" destination="B47-Ey-2IC" id="t5o-L2-oZr"/>
+                <outlet property="title_bottom" destination="MUk-9u-hfM" id="0pc-dR-5c0"/>
+                <outlet property="title_center" destination="fZD-ZR-jbh" id="vAa-EH-dO8"/>
+                <outlet property="title_height" destination="JMd-iI-1yB" id="hzw-q7-I0h"/>
+                <outlet property="title_right" destination="d12-M1-VVi" id="cm6-44-dbs"/>
+                <outlet property="title_top" destination="gq5-xp-Nf8" id="OK3-ot-2pa"/>
+                <outlet property="title_width" destination="mj4-be-c36" id="0y1-2P-atY"/>
+                <outletCollection property="seps_height" destination="E71-MD-JYJ" collectionClass="NSMutableArray" id="LUo-E4-9BX"/>
+                <outletCollection property="seps_height" destination="Ftx-Mz-lNN" collectionClass="NSMutableArray" id="9ph-gV-gwV"/>
+            </connections>
+            <point key="canvasLocation" x="-52" y="-69"/>
+        </collectionReusableView>
+    </objects>
+</document>
