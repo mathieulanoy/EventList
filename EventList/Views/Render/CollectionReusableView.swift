@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ELCollectionReusableView: UICollectionReusableView {
+class CollectionReusableView: UICollectionReusableView {
     class var identifier: String {
         let className = String(describing: self)
         

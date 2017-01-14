@@ -1,67 +1,54 @@
 //
-//  ELEventsViewController.swift
+//  ELLoadingEventsViewController.swift
 //  EventList
 //
-//  Created by Mathieu LANOY on 11/01/2017.
+//  Created by Mathieu LANOY on 12/01/2017.
 //  Copyright © 2017 Mathieu LANOY. All rights reserved.
 //
 
 import UIKit
 
-class ELEventsViewController: ELViewController, ELLoadingProtocol {
+class LoadingEventsViewController: LoadingViewController {
 
-    //MARK: Attributes
-    var indexes:[String] = []
-    var events:[String:[ELEventModel]] = [:]
-    
-    //MARK: IBOutlets
     @IBOutlet weak var cv_events: UICollectionView!
     
-    //MARK: Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-    }
-
-    func configure(_ value: (indexes:[String], values:[String: [ELEventModel]])) {
-        self.events = value.values
-        self.indexes = value.indexes
         view.backgroundColor = .white
         cv_events.delegate = self
         cv_events.dataSource = self
-        cv_events.register(UINib(nibName: ELEventCell.identifier, bundle: nil), forCellWithReuseIdentifier: ELEventCell.identifier)
-        cv_events.register(UINib(nibName: ELEventHeaderView.identifier, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: ELEventHeaderView.identifier)
+        cv_events.isScrollEnabled = false
+        cv_events.register(UINib(nibName: EventCell.identifier, bundle: nil), forCellWithReuseIdentifier: EventCell.identifier)
+        cv_events.register(UINib(nibName: EventHeaderView.identifier, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: EventHeaderView.identifier)
         cv_events.reloadData()
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        view.backgroundColor = .white
     }
 }
 
-extension ELEventsViewController: UICollectionViewDataSource {
+extension LoadingEventsViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return indexes.count
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        let key = indexes[section]
-        if let current_events = events[key] {
-            return current_events.count
-        }
-        return 0
+        return 8
     }
-
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ELEventCell.identifier, for: indexPath)
-        let key = indexes[indexPath.section]
-        if let event = events[key]?[indexPath.item] {
-            (cell as! ELEventCell).display(event: event)
-        }
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: EventCell.identifier, for: indexPath)
+        (cell as! EventCell).displayPlaceholder()
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         switch kind {
         case UICollectionElementKindSectionHeader:
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ELEventHeaderView.identifier, for: indexPath) as! ELEventHeaderView
-            let key = indexes[indexPath.section]
-            headerView.display(title: key)
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: EventHeaderView.identifier, for: indexPath) as! EventHeaderView
+            headerView.displayPlaceHolder()
             return headerView
         default:
             assert(false, "Unexpected element kind")
@@ -70,13 +57,9 @@ extension ELEventsViewController: UICollectionViewDataSource {
 }
 
 
-extension ELEventsViewController: UICollectionViewDelegateFlowLayout {
+extension LoadingEventsViewController: UICollectionViewDelegateFlowLayout {
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let key = indexes[indexPath.section]
-        if let event = events[key]?[indexPath.item] {
-            return ELEventCell.size(forEvent: event, referenceWidth: self.cv_events.bounds.width)
-        }
-        return .zero
+        return EventCell.size(referenceWidth: self.cv_events.bounds.width)
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
@@ -92,7 +75,6 @@ extension ELEventsViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
-        return ELEventHeaderView.size(referenceWidth: self.cv_events.bounds.width)
+        return EventHeaderView.size(referenceWidth: self.cv_events.bounds.width)
     }
 }
-

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ELEventHeaderView: ELCollectionReusableView {
+class EventHeaderView: CollectionReusableView {
 
     @IBOutlet weak var lb_title:        UILabel!
     
@@ -46,7 +46,7 @@ class ELEventHeaderView: ELCollectionReusableView {
     }
 }
 
-extension ELEventHeaderView {
+extension EventHeaderView {
     func displayPlaceHolder() {
         title_width.priority = 999
         title_height.priority = 999

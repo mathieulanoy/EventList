@@ -25,11 +25,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func initApp() {
-        let sharedWebservice = ELWebservice()
-        let loadingController = ELLoadingEventsViewController.instantiate().load({ (callback) in
-            sharedWebservice.load(resource:ELEventModel.all, completion: callback)
+        let sharedWebservice = Webservice()
+        let loadingController = LoadingEventsViewController.instantiate().load({ (callback) in
+            sharedWebservice.load(resource:EventModel.all, completion: callback)
         }) { (events) -> UIViewController in
-            let controller = ELEventsViewController.instantiate()
+            let controller = EventsViewController.instantiate()
             controller.configure(events)
             return controller
         }

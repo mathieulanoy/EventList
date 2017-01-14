@@ -11,34 +11,37 @@
 		4E0EF12D1E26350200A05B23 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0EF12B1E26350200A05B23 /* Main.storyboard */; };
 		4E0EF12F1E26350200A05B23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E0EF12E1E26350200A05B23 /* Assets.xcassets */; };
 		4E0EF1321E26350200A05B23 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E0EF1301E26350200A05B23 /* LaunchScreen.storyboard */; };
-		4E0EF13D1E26372A00A05B23 /* ELEventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF13C1E26372A00A05B23 /* ELEventModel.swift */; };
-		4E0EF13F1E263A7C00A05B23 /* ELWebservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF13E1E263A7C00A05B23 /* ELWebservice.swift */; };
-		4E0EF1431E26412000A05B23 /* ELResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1421E26412000A05B23 /* ELResource.swift */; };
-		4E0EF1451E26467E00A05B23 /* ELImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1441E26467E00A05B23 /* ELImageModel.swift */; };
-		4E0EF1471E2647FF00A05B23 /* ELUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1461E2647FF00A05B23 /* ELUserModel.swift */; };
-		4E0EF1491E26524000A05B23 /* ELPlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1481E26524000A05B23 /* ELPlaceModel.swift */; };
-		4E0EF14B1E2653D000A05B23 /* ELFoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14A1E2653D000A05B23 /* ELFoodModel.swift */; };
-		4E0EF14D1E26545500A05B23 /* ELLanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14C1E26545500A05B23 /* ELLanguageModel.swift */; };
-		4E0EF14F1E26557100A05B23 /* ELCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14E1E26557100A05B23 /* ELCurrencyModel.swift */; };
+		4E0EF13D1E26372A00A05B23 /* EventModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF13C1E26372A00A05B23 /* EventModel.swift */; };
+		4E0EF13F1E263A7C00A05B23 /* Webservice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF13E1E263A7C00A05B23 /* Webservice.swift */; };
+		4E0EF1431E26412000A05B23 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1421E26412000A05B23 /* Resource.swift */; };
+		4E0EF1451E26467E00A05B23 /* ImageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1441E26467E00A05B23 /* ImageModel.swift */; };
+		4E0EF1471E2647FF00A05B23 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1461E2647FF00A05B23 /* UserModel.swift */; };
+		4E0EF1491E26524000A05B23 /* PlaceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1481E26524000A05B23 /* PlaceModel.swift */; };
+		4E0EF14B1E2653D000A05B23 /* FoodModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14A1E2653D000A05B23 /* FoodModel.swift */; };
+		4E0EF14D1E26545500A05B23 /* LanguageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14C1E26545500A05B23 /* LanguageModel.swift */; };
+		4E0EF14F1E26557100A05B23 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF14E1E26557100A05B23 /* CurrencyModel.swift */; };
 		4E0EF1521E2664F100A05B23 /* UIView+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1511E2664F100A05B23 /* UIView+autoLayout.swift */; };
 		4E0EF1541E2665DB00A05B23 /* NSLayoutAnchor+autoLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1531E2665DB00A05B23 /* NSLayoutAnchor+autoLayout.swift */; };
-		4E0EF1561E2666E100A05B23 /* ELEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1551E2666E100A05B23 /* ELEventsViewController.swift */; };
-		4E0EF1581E2667D100A05B23 /* ELLoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1571E2667D000A05B23 /* ELLoadingViewController.swift */; };
-		4E0EF15A1E2668B500A05B23 /* ELResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1591E2668B500A05B23 /* ELResult.swift */; };
-		4E0EF15C1E26698E00A05B23 /* ELWebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF15B1E26698D00A05B23 /* ELWebserviceError.swift */; };
-		4E0EF15F1E266E7E00A05B23 /* ELLoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF15E1E266E7E00A05B23 /* ELLoadingProtocol.swift */; };
-		4E0EF1631E26846D00A05B23 /* ELCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1621E26846D00A05B23 /* ELCollectionViewCell.swift */; };
-		4E0EF1651E26851C00A05B23 /* ELEventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1641E26851C00A05B23 /* ELEventCell.swift */; };
+		4E0EF1561E2666E100A05B23 /* EventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1551E2666E100A05B23 /* EventsViewController.swift */; };
+		4E0EF1581E2667D100A05B23 /* LoadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1571E2667D000A05B23 /* LoadingViewController.swift */; };
+		4E0EF15A1E2668B500A05B23 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1591E2668B500A05B23 /* Result.swift */; };
+		4E0EF15C1E26698E00A05B23 /* WebserviceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF15B1E26698D00A05B23 /* WebserviceError.swift */; };
+		4E0EF15F1E266E7E00A05B23 /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF15E1E266E7E00A05B23 /* LoadingProtocol.swift */; };
+		4E0EF1631E26846D00A05B23 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1621E26846D00A05B23 /* CollectionViewCell.swift */; };
+		4E0EF1651E26851C00A05B23 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1641E26851C00A05B23 /* EventCell.swift */; };
 		4E0EF1671E2690EF00A05B23 /* Sequence+groupedBy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1661E2690EF00A05B23 /* Sequence+groupedBy.swift */; };
 		4E0EF1691E26A43C00A05B23 /* String+size.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EF1681E26A43C00A05B23 /* String+size.swift */; };
-		4ED07DBC1E26DE7F00C6CCD3 /* ELStarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBB1E26DE7F00C6CCD3 /* ELStarView.swift */; };
-		4ED07DBE1E26EE9000C6CCD3 /* ELStoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBD1E26EE9000C6CCD3 /* ELStoryboardInstantiable.swift */; };
-		4ED07DC01E26F1A600C6CCD3 /* ELViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBF1E26F1A600C6CCD3 /* ELViewController.swift */; };
-		4ED07DC21E26F2C600C6CCD3 /* ELLoadingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DC11E26F2C600C6CCD3 /* ELLoadingEventsViewController.swift */; };
-		4ED07DC41E26F62A00C6CCD3 /* ELEventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED07DC31E26F62A00C6CCD3 /* ELEventCell.xib */; };
-		4ED07DC81E26FE3900C6CCD3 /* ELEventHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DC61E26FE3900C6CCD3 /* ELEventHeaderView.swift */; };
-		4ED07DC91E26FE3900C6CCD3 /* ELEventHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED07DC71E26FE3900C6CCD3 /* ELEventHeaderView.xib */; };
-		4ED07DCB1E26FF9B00C6CCD3 /* ELCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DCA1E26FF9B00C6CCD3 /* ELCollectionReusableView.swift */; };
+		4E64E04D1E2A6FEB00B5D3B1 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64E04C1E2A6FEB00B5D3B1 /* Router.swift */; };
+		4E64E0501E2A734E00B5D3B1 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64E04F1E2A734E00B5D3B1 /* API.swift */; };
+		4E64E0521E2A738600B5D3B1 /* AccessTokenAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E64E0511E2A738600B5D3B1 /* AccessTokenAdapter.swift */; };
+		4ED07DBC1E26DE7F00C6CCD3 /* StarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBB1E26DE7F00C6CCD3 /* StarView.swift */; };
+		4ED07DBE1E26EE9000C6CCD3 /* StoryboardInstantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBD1E26EE9000C6CCD3 /* StoryboardInstantiable.swift */; };
+		4ED07DC01E26F1A600C6CCD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DBF1E26F1A600C6CCD3 /* ViewController.swift */; };
+		4ED07DC21E26F2C600C6CCD3 /* LoadingEventsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DC11E26F2C600C6CCD3 /* LoadingEventsViewController.swift */; };
+		4ED07DC41E26F62A00C6CCD3 /* EventCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED07DC31E26F62A00C6CCD3 /* EventCell.xib */; };
+		4ED07DC81E26FE3900C6CCD3 /* EventHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DC61E26FE3900C6CCD3 /* EventHeaderView.swift */; };
+		4ED07DC91E26FE3900C6CCD3 /* EventHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4ED07DC71E26FE3900C6CCD3 /* EventHeaderView.xib */; };
+		4ED07DCB1E26FF9B00C6CCD3 /* CollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4ED07DCA1E26FF9B00C6CCD3 /* CollectionReusableView.swift */; };
 		A364FB69EC8730EDB7966D5A /* Pods_EventList.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A26967F5C2278AB46868C314 /* Pods_EventList.framework */; };
 /* End PBXBuildFile section */
 
@@ -50,34 +53,37 @@
 		4E0EF12E1E26350200A05B23 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E0EF1311E26350200A05B23 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E0EF1331E26350200A05B23 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		4E0EF13C1E26372A00A05B23 /* ELEventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELEventModel.swift; path = Models/ELEventModel.swift; sourceTree = "<group>"; };
-		4E0EF13E1E263A7C00A05B23 /* ELWebservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELWebservice.swift; path = Services/ELWebservice.swift; sourceTree = "<group>"; };
-		4E0EF1421E26412000A05B23 /* ELResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELResource.swift; path = Services/ELResource.swift; sourceTree = "<group>"; };
-		4E0EF1441E26467E00A05B23 /* ELImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELImageModel.swift; path = Models/ELImageModel.swift; sourceTree = "<group>"; };
-		4E0EF1461E2647FF00A05B23 /* ELUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELUserModel.swift; path = Models/ELUserModel.swift; sourceTree = "<group>"; };
-		4E0EF1481E26524000A05B23 /* ELPlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELPlaceModel.swift; path = Models/ELPlaceModel.swift; sourceTree = "<group>"; };
-		4E0EF14A1E2653D000A05B23 /* ELFoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELFoodModel.swift; path = Models/ELFoodModel.swift; sourceTree = "<group>"; };
-		4E0EF14C1E26545500A05B23 /* ELLanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELLanguageModel.swift; path = Models/ELLanguageModel.swift; sourceTree = "<group>"; };
-		4E0EF14E1E26557100A05B23 /* ELCurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELCurrencyModel.swift; path = Models/ELCurrencyModel.swift; sourceTree = "<group>"; };
+		4E0EF13C1E26372A00A05B23 /* EventModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventModel.swift; path = Models/EventModel.swift; sourceTree = "<group>"; };
+		4E0EF13E1E263A7C00A05B23 /* Webservice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Webservice.swift; path = Services/Webservice.swift; sourceTree = "<group>"; };
+		4E0EF1421E26412000A05B23 /* Resource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Services/Resource.swift; sourceTree = "<group>"; };
+		4E0EF1441E26467E00A05B23 /* ImageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ImageModel.swift; path = Models/ImageModel.swift; sourceTree = "<group>"; };
+		4E0EF1461E2647FF00A05B23 /* UserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserModel.swift; path = Models/UserModel.swift; sourceTree = "<group>"; };
+		4E0EF1481E26524000A05B23 /* PlaceModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PlaceModel.swift; path = Models/PlaceModel.swift; sourceTree = "<group>"; };
+		4E0EF14A1E2653D000A05B23 /* FoodModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FoodModel.swift; path = Models/FoodModel.swift; sourceTree = "<group>"; };
+		4E0EF14C1E26545500A05B23 /* LanguageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LanguageModel.swift; path = Models/LanguageModel.swift; sourceTree = "<group>"; };
+		4E0EF14E1E26557100A05B23 /* CurrencyModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CurrencyModel.swift; path = Models/CurrencyModel.swift; sourceTree = "<group>"; };
 		4E0EF1511E2664F100A05B23 /* UIView+autoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UIView+autoLayout.swift"; path = "Modules/UIView+autoLayout.swift"; sourceTree = "<group>"; };
 		4E0EF1531E2665DB00A05B23 /* NSLayoutAnchor+autoLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NSLayoutAnchor+autoLayout.swift"; path = "Modules/NSLayoutAnchor+autoLayout.swift"; sourceTree = "<group>"; };
-		4E0EF1551E2666E100A05B23 /* ELEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELEventsViewController.swift; path = Controllers/ELEventsViewController.swift; sourceTree = "<group>"; };
-		4E0EF1571E2667D000A05B23 /* ELLoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELLoadingViewController.swift; path = Controllers/ELLoadingViewController.swift; sourceTree = "<group>"; };
-		4E0EF1591E2668B500A05B23 /* ELResult.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELResult.swift; path = Services/ELResult.swift; sourceTree = "<group>"; };
-		4E0EF15B1E26698D00A05B23 /* ELWebserviceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELWebserviceError.swift; path = Services/ELWebserviceError.swift; sourceTree = "<group>"; };
-		4E0EF15E1E266E7E00A05B23 /* ELLoadingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELLoadingProtocol.swift; path = Protocols/ELLoadingProtocol.swift; sourceTree = "<group>"; };
-		4E0EF1621E26846D00A05B23 /* ELCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELCollectionViewCell.swift; path = Views/Render/ELCollectionViewCell.swift; sourceTree = "<group>"; };
-		4E0EF1641E26851C00A05B23 /* ELEventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELEventCell.swift; path = Views/Render/ELEventCell.swift; sourceTree = "<group>"; };
+		4E0EF1551E2666E100A05B23 /* EventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventsViewController.swift; path = Controllers/EventsViewController.swift; sourceTree = "<group>"; };
+		4E0EF1571E2667D000A05B23 /* LoadingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingViewController.swift; path = Controllers/LoadingViewController.swift; sourceTree = "<group>"; };
+		4E0EF1591E2668B500A05B23 /* Result.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Services/Result.swift; sourceTree = "<group>"; };
+		4E0EF15B1E26698D00A05B23 /* WebserviceError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WebserviceError.swift; path = Services/WebserviceError.swift; sourceTree = "<group>"; };
+		4E0EF15E1E266E7E00A05B23 /* LoadingProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingProtocol.swift; path = Protocols/LoadingProtocol.swift; sourceTree = "<group>"; };
+		4E0EF1621E26846D00A05B23 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionViewCell.swift; path = Views/Render/CollectionViewCell.swift; sourceTree = "<group>"; };
+		4E0EF1641E26851C00A05B23 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventCell.swift; path = Views/Render/EventCell.swift; sourceTree = "<group>"; };
 		4E0EF1661E2690EF00A05B23 /* Sequence+groupedBy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Sequence+groupedBy.swift"; path = "Modules/Sequence+groupedBy.swift"; sourceTree = "<group>"; };
 		4E0EF1681E26A43C00A05B23 /* String+size.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "String+size.swift"; path = "Modules/String+size.swift"; sourceTree = "<group>"; };
-		4ED07DBB1E26DE7F00C6CCD3 /* ELStarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELStarView.swift; path = Views/Stars/ELStarView.swift; sourceTree = "<group>"; };
-		4ED07DBD1E26EE9000C6CCD3 /* ELStoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELStoryboardInstantiable.swift; path = Protocols/ELStoryboardInstantiable.swift; sourceTree = "<group>"; };
-		4ED07DBF1E26F1A600C6CCD3 /* ELViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELViewController.swift; path = Controllers/ELViewController.swift; sourceTree = "<group>"; };
-		4ED07DC11E26F2C600C6CCD3 /* ELLoadingEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELLoadingEventsViewController.swift; path = Controllers/ELLoadingEventsViewController.swift; sourceTree = "<group>"; };
-		4ED07DC31E26F62A00C6CCD3 /* ELEventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ELEventCell.xib; path = Views/Render/ELEventCell.xib; sourceTree = "<group>"; };
-		4ED07DC61E26FE3900C6CCD3 /* ELEventHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELEventHeaderView.swift; path = Views/Render/ELEventHeaderView.swift; sourceTree = "<group>"; };
-		4ED07DC71E26FE3900C6CCD3 /* ELEventHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ELEventHeaderView.xib; path = Views/Render/ELEventHeaderView.xib; sourceTree = "<group>"; };
-		4ED07DCA1E26FF9B00C6CCD3 /* ELCollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ELCollectionReusableView.swift; path = Views/Render/ELCollectionReusableView.swift; sourceTree = "<group>"; };
+		4E64E04C1E2A6FEB00B5D3B1 /* Router.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Router.swift; path = Services/Router.swift; sourceTree = "<group>"; };
+		4E64E04F1E2A734E00B5D3B1 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = API.swift; path = Services/API.swift; sourceTree = "<group>"; };
+		4E64E0511E2A738600B5D3B1 /* AccessTokenAdapter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AccessTokenAdapter.swift; path = Services/AccessTokenAdapter.swift; sourceTree = "<group>"; };
+		4ED07DBB1E26DE7F00C6CCD3 /* StarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StarView.swift; path = Views/Stars/StarView.swift; sourceTree = "<group>"; };
+		4ED07DBD1E26EE9000C6CCD3 /* StoryboardInstantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryboardInstantiable.swift; path = Protocols/StoryboardInstantiable.swift; sourceTree = "<group>"; };
+		4ED07DBF1E26F1A600C6CCD3 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = Controllers/ViewController.swift; sourceTree = "<group>"; };
+		4ED07DC11E26F2C600C6CCD3 /* LoadingEventsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingEventsViewController.swift; path = Controllers/LoadingEventsViewController.swift; sourceTree = "<group>"; };
+		4ED07DC31E26F62A00C6CCD3 /* EventCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventCell.xib; path = Views/Render/EventCell.xib; sourceTree = "<group>"; };
+		4ED07DC61E26FE3900C6CCD3 /* EventHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EventHeaderView.swift; path = Views/Render/EventHeaderView.swift; sourceTree = "<group>"; };
+		4ED07DC71E26FE3900C6CCD3 /* EventHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = EventHeaderView.xib; path = Views/Render/EventHeaderView.xib; sourceTree = "<group>"; };
+		4ED07DCA1E26FF9B00C6CCD3 /* CollectionReusableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CollectionReusableView.swift; path = Views/Render/CollectionReusableView.swift; sourceTree = "<group>"; };
 		A26967F5C2278AB46868C314 /* Pods_EventList.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EventList.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E4CFE2F5FD2D52DE574D4D71 /* Pods-EventList.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EventList.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EventList/Pods-EventList.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,13 +147,13 @@
 		4E0EF1391E2636F700A05B23 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EF13C1E26372A00A05B23 /* ELEventModel.swift */,
-				4E0EF1441E26467E00A05B23 /* ELImageModel.swift */,
-				4E0EF1461E2647FF00A05B23 /* ELUserModel.swift */,
-				4E0EF1481E26524000A05B23 /* ELPlaceModel.swift */,
-				4E0EF14A1E2653D000A05B23 /* ELFoodModel.swift */,
-				4E0EF14C1E26545500A05B23 /* ELLanguageModel.swift */,
-				4E0EF14E1E26557100A05B23 /* ELCurrencyModel.swift */,
+				4E0EF13C1E26372A00A05B23 /* EventModel.swift */,
+				4E0EF1441E26467E00A05B23 /* ImageModel.swift */,
+				4E0EF1461E2647FF00A05B23 /* UserModel.swift */,
+				4E0EF1481E26524000A05B23 /* PlaceModel.swift */,
+				4E0EF14A1E2653D000A05B23 /* FoodModel.swift */,
+				4E0EF14C1E26545500A05B23 /* LanguageModel.swift */,
+				4E0EF14E1E26557100A05B23 /* CurrencyModel.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -156,8 +162,8 @@
 			isa = PBXGroup;
 			children = (
 				4ED07DCE1E27095B00C6CCD3 /* Abstract */,
-				4E0EF1551E2666E100A05B23 /* ELEventsViewController.swift */,
-				4ED07DC11E26F2C600C6CCD3 /* ELLoadingEventsViewController.swift */,
+				4E0EF1551E2666E100A05B23 /* EventsViewController.swift */,
+				4ED07DC11E26F2C600C6CCD3 /* LoadingEventsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -165,10 +171,13 @@
 		4E0EF13B1E26370300A05B23 /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EF1421E26412000A05B23 /* ELResource.swift */,
-				4E0EF13E1E263A7C00A05B23 /* ELWebservice.swift */,
-				4E0EF1591E2668B500A05B23 /* ELResult.swift */,
-				4E0EF15B1E26698D00A05B23 /* ELWebserviceError.swift */,
+				4E0EF1421E26412000A05B23 /* Resource.swift */,
+				4E0EF13E1E263A7C00A05B23 /* Webservice.swift */,
+				4E0EF1591E2668B500A05B23 /* Result.swift */,
+				4E0EF15B1E26698D00A05B23 /* WebserviceError.swift */,
+				4E64E04C1E2A6FEB00B5D3B1 /* Router.swift */,
+				4E64E04F1E2A734E00B5D3B1 /* API.swift */,
+				4E64E0511E2A738600B5D3B1 /* AccessTokenAdapter.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -187,8 +196,8 @@
 		4E0EF15D1E266E2500A05B23 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EF15E1E266E7E00A05B23 /* ELLoadingProtocol.swift */,
-				4ED07DBD1E26EE9000C6CCD3 /* ELStoryboardInstantiable.swift */,
+				4E0EF15E1E266E7E00A05B23 /* LoadingProtocol.swift */,
+				4ED07DBD1E26EE9000C6CCD3 /* StoryboardInstantiable.swift */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -207,8 +216,8 @@
 			children = (
 				4ED07DCD1E27094700C6CCD3 /* Abstract */,
 				4ED07DC51E26FE1100C6CCD3 /* Headers */,
-				4E0EF1641E26851C00A05B23 /* ELEventCell.swift */,
-				4ED07DC31E26F62A00C6CCD3 /* ELEventCell.xib */,
+				4E0EF1641E26851C00A05B23 /* EventCell.swift */,
+				4ED07DC31E26F62A00C6CCD3 /* EventCell.xib */,
 			);
 			name = Render;
 			sourceTree = "<group>";
@@ -216,7 +225,7 @@
 		4ED07DBA1E26DE5600C6CCD3 /* Stars */ = {
 			isa = PBXGroup;
 			children = (
-				4ED07DBB1E26DE7F00C6CCD3 /* ELStarView.swift */,
+				4ED07DBB1E26DE7F00C6CCD3 /* StarView.swift */,
 			);
 			name = Stars;
 			sourceTree = "<group>";
@@ -225,8 +234,8 @@
 			isa = PBXGroup;
 			children = (
 				4ED07DCC1E27093C00C6CCD3 /* Abstract */,
-				4ED07DC61E26FE3900C6CCD3 /* ELEventHeaderView.swift */,
-				4ED07DC71E26FE3900C6CCD3 /* ELEventHeaderView.xib */,
+				4ED07DC61E26FE3900C6CCD3 /* EventHeaderView.swift */,
+				4ED07DC71E26FE3900C6CCD3 /* EventHeaderView.xib */,
 			);
 			name = Headers;
 			sourceTree = "<group>";
@@ -234,7 +243,7 @@
 		4ED07DCC1E27093C00C6CCD3 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				4ED07DCA1E26FF9B00C6CCD3 /* ELCollectionReusableView.swift */,
+				4ED07DCA1E26FF9B00C6CCD3 /* CollectionReusableView.swift */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -242,7 +251,7 @@
 		4ED07DCD1E27094700C6CCD3 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				4E0EF1621E26846D00A05B23 /* ELCollectionViewCell.swift */,
+				4E0EF1621E26846D00A05B23 /* CollectionViewCell.swift */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -250,8 +259,8 @@
 		4ED07DCE1E27095B00C6CCD3 /* Abstract */ = {
 			isa = PBXGroup;
 			children = (
-				4ED07DBF1E26F1A600C6CCD3 /* ELViewController.swift */,
-				4E0EF1571E2667D000A05B23 /* ELLoadingViewController.swift */,
+				4ED07DBF1E26F1A600C6CCD3 /* ViewController.swift */,
+				4E0EF1571E2667D000A05B23 /* LoadingViewController.swift */,
 			);
 			name = Abstract;
 			sourceTree = "<group>";
@@ -331,8 +340,8 @@
 				4E0EF1321E26350200A05B23 /* LaunchScreen.storyboard in Resources */,
 				4E0EF12F1E26350200A05B23 /* Assets.xcassets in Resources */,
 				4E0EF12D1E26350200A05B23 /* Main.storyboard in Resources */,
-				4ED07DC41E26F62A00C6CCD3 /* ELEventCell.xib in Resources */,
-				4ED07DC91E26FE3900C6CCD3 /* ELEventHeaderView.xib in Resources */,
+				4ED07DC41E26F62A00C6CCD3 /* EventCell.xib in Resources */,
+				4ED07DC91E26FE3900C6CCD3 /* EventHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,32 +401,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E0EF1541E2665DB00A05B23 /* NSLayoutAnchor+autoLayout.swift in Sources */,
-				4E0EF14F1E26557100A05B23 /* ELCurrencyModel.swift in Sources */,
-				4E0EF1581E2667D100A05B23 /* ELLoadingViewController.swift in Sources */,
-				4E0EF14D1E26545500A05B23 /* ELLanguageModel.swift in Sources */,
-				4E0EF1471E2647FF00A05B23 /* ELUserModel.swift in Sources */,
-				4ED07DC81E26FE3900C6CCD3 /* ELEventHeaderView.swift in Sources */,
-				4ED07DC21E26F2C600C6CCD3 /* ELLoadingEventsViewController.swift in Sources */,
-				4E0EF1651E26851C00A05B23 /* ELEventCell.swift in Sources */,
+				4E0EF14F1E26557100A05B23 /* CurrencyModel.swift in Sources */,
+				4E0EF1581E2667D100A05B23 /* LoadingViewController.swift in Sources */,
+				4E0EF14D1E26545500A05B23 /* LanguageModel.swift in Sources */,
+				4E0EF1471E2647FF00A05B23 /* UserModel.swift in Sources */,
+				4ED07DC81E26FE3900C6CCD3 /* EventHeaderView.swift in Sources */,
+				4ED07DC21E26F2C600C6CCD3 /* LoadingEventsViewController.swift in Sources */,
+				4E0EF1651E26851C00A05B23 /* EventCell.swift in Sources */,
 				4E0EF1671E2690EF00A05B23 /* Sequence+groupedBy.swift in Sources */,
-				4E0EF13D1E26372A00A05B23 /* ELEventModel.swift in Sources */,
-				4E0EF13F1E263A7C00A05B23 /* ELWebservice.swift in Sources */,
-				4ED07DBE1E26EE9000C6CCD3 /* ELStoryboardInstantiable.swift in Sources */,
-				4E0EF14B1E2653D000A05B23 /* ELFoodModel.swift in Sources */,
-				4ED07DCB1E26FF9B00C6CCD3 /* ELCollectionReusableView.swift in Sources */,
-				4E0EF15F1E266E7E00A05B23 /* ELLoadingProtocol.swift in Sources */,
-				4E0EF1631E26846D00A05B23 /* ELCollectionViewCell.swift in Sources */,
-				4E0EF1491E26524000A05B23 /* ELPlaceModel.swift in Sources */,
-				4E0EF1451E26467E00A05B23 /* ELImageModel.swift in Sources */,
+				4E0EF13D1E26372A00A05B23 /* EventModel.swift in Sources */,
+				4E0EF13F1E263A7C00A05B23 /* Webservice.swift in Sources */,
+				4ED07DBE1E26EE9000C6CCD3 /* StoryboardInstantiable.swift in Sources */,
+				4E0EF14B1E2653D000A05B23 /* FoodModel.swift in Sources */,
+				4ED07DCB1E26FF9B00C6CCD3 /* CollectionReusableView.swift in Sources */,
+				4E64E0501E2A734E00B5D3B1 /* API.swift in Sources */,
+				4E64E0521E2A738600B5D3B1 /* AccessTokenAdapter.swift in Sources */,
+				4E0EF15F1E266E7E00A05B23 /* LoadingProtocol.swift in Sources */,
+				4E0EF1631E26846D00A05B23 /* CollectionViewCell.swift in Sources */,
+				4E0EF1491E26524000A05B23 /* PlaceModel.swift in Sources */,
+				4E0EF1451E26467E00A05B23 /* ImageModel.swift in Sources */,
 				4E0EF1521E2664F100A05B23 /* UIView+autoLayout.swift in Sources */,
-				4ED07DBC1E26DE7F00C6CCD3 /* ELStarView.swift in Sources */,
-				4ED07DC01E26F1A600C6CCD3 /* ELViewController.swift in Sources */,
-				4E0EF15C1E26698E00A05B23 /* ELWebserviceError.swift in Sources */,
+				4ED07DBC1E26DE7F00C6CCD3 /* StarView.swift in Sources */,
+				4ED07DC01E26F1A600C6CCD3 /* ViewController.swift in Sources */,
+				4E0EF15C1E26698E00A05B23 /* WebserviceError.swift in Sources */,
+				4E64E04D1E2A6FEB00B5D3B1 /* Router.swift in Sources */,
 				4E0EF1281E26350200A05B23 /* AppDelegate.swift in Sources */,
-				4E0EF1561E2666E100A05B23 /* ELEventsViewController.swift in Sources */,
-				4E0EF15A1E2668B500A05B23 /* ELResult.swift in Sources */,
+				4E0EF1561E2666E100A05B23 /* EventsViewController.swift in Sources */,
+				4E0EF15A1E2668B500A05B23 /* Result.swift in Sources */,
 				4E0EF1691E26A43C00A05B23 /* String+size.swift in Sources */,
-				4E0EF1431E26412000A05B23 /* ELResource.swift in Sources */,
+				4E0EF1431E26412000A05B23 /* Resource.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

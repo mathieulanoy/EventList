@@ -8,14 +8,14 @@
 
 import UIKit
 
-protocol ELStoryboardInstantiable {
+protocol StoryboardInstantiable {
     
     static var storyboardName: String { get }
     static var storyboardBundle: Bundle? { get }
     static var storyboardIdentifier: String? { get }
 }
 
-extension ELStoryboardInstantiable {
+extension StoryboardInstantiable {
     
     static var storyboardIdentifier: String? { return nil }
     static var storyboardBundle: Bundle? { return nil }

@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-struct ELLanguageModel {
+struct LanguageModel {
 
     let languageId: Int
     let translated: Bool

@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ELLoadingViewController: ELViewController {
+class LoadingViewController: ViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,7 @@ class ELLoadingViewController: ELViewController {
         view.backgroundColor = .yellow
     }
     
-    func load<A>(_ load: ( @escaping (ELResult<A>) -> ()) -> (), build: @escaping (A) -> UIViewController) -> Self {
+    func load<A>(_ load: (@escaping (Result<A>) -> ()) -> (), build: @escaping (A) -> UIViewController) -> Self {
         load() { [weak self] result in
             guard let strongSelf = self else { return }
             guard let value = result.value else {

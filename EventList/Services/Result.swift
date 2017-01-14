@@ -8,12 +8,12 @@
 
 import UIKit
 
-public enum ELResult<A> {
+public enum Result<A> {
     case success(A)
     case error(Error?)
 }
 
-extension ELResult {
+extension Result {
     public init(_ value: A?, or error: Error?){
         if let value = value {
             self = .success(value)

@@ -12,7 +12,7 @@
         <!--Events View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController storyboardIdentifier="ELEventsViewController" id="BYZ-38-t0r" customClass="ELEventsViewController" customModule="EventList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="EventsViewController" id="BYZ-38-t0r" customClass="EventsViewController" customModule="EventList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -52,7 +52,7 @@
         <!--Loading Events View Controller-->
         <scene sceneID="HsG-ZV-SDR">
             <objects>
-                <viewController storyboardIdentifier="ELLoadingEventsViewController" id="fCS-zl-QUp" customClass="ELLoadingEventsViewController" customModule="EventList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoadingEventsViewController" id="fCS-zl-QUp" customClass="LoadingEventsViewController" customModule="EventList" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="gqX-sD-aGh"/>
                         <viewControllerLayoutGuide type="bottom" id="ZyZ-Fl-8O5"/>

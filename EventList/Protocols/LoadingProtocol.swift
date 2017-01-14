@@ -1,5 +1,5 @@
 //
-//  EKWebserviceError.swift
+//  ELLoadingProtocol.swift
 //  EventList
 //
 //  Created by Mathieu LANOY on 11/01/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-public enum ELWebserviceError:Error {
-    case other
-    case noError
+protocol LoadingProtocol {
+    associatedtype ResourceType
+    func configure(_ value: ResourceType)
 }

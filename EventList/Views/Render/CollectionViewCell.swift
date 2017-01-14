@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ELCollectionViewCell: UICollectionViewCell {
+class CollectionViewCell: UICollectionViewCell {
 
     class var identifier: String {
         let className = String(describing: self)

@@ -6,15 +6,15 @@
 //  Copyright © 2017 Mathieu LANOY. All rights reserved.
 //
 
-import UIKit
+import Alamofire
 
-struct ELResource<A> {
-    let url: URL
+struct Resource<A> {
+    let url: URLRequestConvertible
     let parse: (Any?) -> A?
 }
 
-extension ELResource {
-    init(url: URL, parseHandler: @escaping (Any?) -> A?) {
+extension Resource {
+    init(url: URLRequestConvertible, parseHandler: @escaping (Any?) -> A?) {
         self.url = url
         self.parse = parseHandler
     }

@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ELImageModel {
+class ImageModel {
     let imageId:            Int
     let accountId:          Int
     let path:               String

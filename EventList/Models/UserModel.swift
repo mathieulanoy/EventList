@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ELUserModel {
+class UserModel {
     let userId:             Int
     let civility:           String
     let firstname:          String
@@ -18,7 +18,7 @@ class ELUserModel {
     let age:                String
     let user_rating_score:  Float
     let user_rating_count:  Int
-    let avatar:             ELImageModel
+    let avatar:             ImageModel
     
     init(jsonObject:JSON) {
         userId = jsonObject["id"].intValue
@@ -29,6 +29,6 @@ class ELUserModel {
         age = jsonObject["age"].stringValue
         user_rating_score = jsonObject["rating", "score"].floatValue
         user_rating_count = jsonObject["rating", "count"].intValue
-        avatar = ELImageModel(jsonObject: jsonObject["avatar"])
+        avatar = ImageModel(jsonObject: jsonObject["avatar"])
     }
 }

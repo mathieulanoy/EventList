@@ -8,10 +8,10 @@
 
 import UIKit
 
-class ELViewController: UIViewController {
+class ViewController: UIViewController {
 }
 
-extension ELViewController: ELStoryboardInstantiable {
+extension ViewController: StoryboardInstantiable {
     static var storyboardName: String { return "Main" }
     static var storyboardIdentifier: String? { return String(describing: self)}
 }

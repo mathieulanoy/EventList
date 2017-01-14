@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-class ELEventModel {
+class EventModel {
 
     let eventId:            Int
     let title:              String
@@ -19,14 +19,14 @@ class ELEventModel {
     let localized_type:     String
     let begins_at:          String
     let ends_at:            String
-    let cover:              ELImageModel
-    let user:               ELUserModel
-    let place:              ELPlaceModel
-    let food:               ELFoodModel
-    let diets:              [ELFoodModel]
-    let languages:          [ELLanguageModel]
+    let cover:              ImageModel
+    let user:               UserModel
+    let place:              PlaceModel
+    let food:               FoodModel
+    let diets:              [FoodModel]
+    let languages:          [LanguageModel]
     let price:              Int
-    let currency:           ELCurrencyModel
+    let currency:           CurrencyModel
     
     init(jsonObject:JSON) {
         eventId = jsonObject["id"].intValue
@@ -37,29 +37,25 @@ class ELEventModel {
         localized_type = jsonObject["localized_type"].stringValue
         begins_at = jsonObject["begins_at"].stringValue
         ends_at = jsonObject["ends_at"].stringValue
-        cover = ELImageModel(jsonObject: jsonObject["cover"])
-        user = ELUserModel(jsonObject: jsonObject["user"])
-        place = ELPlaceModel(jsonObject: jsonObject["place"])
-        food = ELFoodModel(jsonObject: jsonObject["food"])
-        diets = jsonObject["diets"].arrayValue.map{ELFoodModel(jsonObject:$0)}
-        languages = jsonObject["languages"].arrayValue.map{ELLanguageModel(jsonObject:$0)}
+        cover = ImageModel(jsonObject: jsonObject["cover"])
+        user = UserModel(jsonObject: jsonObject["user"])
+        place = PlaceModel(jsonObject: jsonObject["place"])
+        food = FoodModel(jsonObject: jsonObject["food"])
+        diets = jsonObject["diets"].arrayValue.map{FoodModel(jsonObject:$0)}
+        languages = jsonObject["languages"].arrayValue.map{LanguageModel(jsonObject:$0)}
         price = jsonObject["price"].intValue
-        currency = ELCurrencyModel(jsonObject: jsonObject["currency"])
+        currency = CurrencyModel(jsonObject: jsonObject["currency"])
     }
 }
 
 // MARK: Webservice Usage
-fileprivate enum EventEndpoint {
-    static let all = "https://dl.dropboxusercontent.com/u/6656652/events.json"
-}
-
-extension ELEventModel {
+extension EventModel {
     
-    static let all = ELResource<(indexes:[String], values:[String: [ELEventModel]])>(url: URL(string:EventEndpoint.all)!, parseHandler: {json in
+    static let all = Resource<(indexes:[String], values:[String: [EventModel]])>(url: Router.events(eventsId: "6656652"), parseHandler: {json in
         guard let json = json else { return nil }
         let jsonObject = JSON(json)
         var events = jsonObject["events"].arrayValue
-            .map{ELEventModel(jsonObject:$0)}
+            .map{EventModel(jsonObject:$0)}
             .sorted {
                 if $0.food.title.localizedCaseInsensitiveCompare($1.food.title) == .orderedSame {
                     return $0.title.localizedCaseInsensitiveCompare($1.title) == .orderedAscending

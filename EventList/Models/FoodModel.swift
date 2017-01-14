@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-struct ELFoodModel {
+struct FoodModel {
     let foodId:         Int
     let title:          String
     let description:    String

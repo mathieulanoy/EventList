@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-struct ELPlaceModel {
+struct PlaceModel {
     let placeId:                        Int
     let userId:                         Int
     let title:                          String

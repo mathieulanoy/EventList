@@ -10,7 +10,7 @@ import UIKit
 import Alamofire
 import AlamofireImage
 
-class ELEventCell: ELCollectionViewCell {
+class EventCell: CollectionViewCell {
 
     //MARK: Outlets
     @IBOutlet weak var img_event:       UIImageView!
@@ -25,7 +25,7 @@ class ELEventCell: ELCollectionViewCell {
     @IBOutlet weak var user_width:      NSLayoutConstraint!
     @IBOutlet weak var user_height:     NSLayoutConstraint!
     @IBOutlet weak var lb_price:        UILabel!
-    @IBOutlet var v_stars:              [ELStarView]!
+    @IBOutlet var v_stars:              [StarView]!
     @IBOutlet weak var lb_score:        UILabel!
     @IBOutlet weak var score_height:    NSLayoutConstraint!
     @IBOutlet weak var score_width:     NSLayoutConstraint!
@@ -33,10 +33,10 @@ class ELEventCell: ELCollectionViewCell {
     //MARK: Datas
     static let currencyFormatter = NumberFormatter()
     
-    var event:ELEventModel?
+    var event:EventModel?
     
     //MARK: Methods
-    class func size(forEvent event:ELEventModel, referenceWidth:CGFloat) -> CGSize {
+    class func size(forEvent event:EventModel, referenceWidth:CGFloat) -> CGSize {
         let img_width = referenceWidth - 16.0
         var height = 8.0 + img_width * 9.0 / 16.0
         height += 8.0 + 30.0 + 8.0 + 0.5 + 8.0 //cover bottom + user img height + user img bottom + sep + bottom margin
@@ -50,7 +50,7 @@ class ELEventCell: ELCollectionViewCell {
         return CGSize(width: referenceWidth, height: height)
     }
     
-    func display(event:ELEventModel) {
+    func display(event:EventModel) {
         self.event = event
         
         Alamofire.request(event.cover.path).responseImage { [weak self] response in
@@ -83,12 +83,12 @@ class ELEventCell: ELCollectionViewCell {
         user_width.constant = size.width
         user_height.constant = size.height
         
-        ELEventCell.currencyFormatter.usesGroupingSeparator = true
-        ELEventCell.currencyFormatter.numberStyle = .currency
-        ELEventCell.currencyFormatter.locale = Locale.current
-        ELEventCell.currencyFormatter.currencyCode = event.currency.iso_3
-        ELEventCell.currencyFormatter.currencySymbol = event.currency.symbol
-        let priceString = ELEventCell.currencyFormatter.string(from: NSNumber(value: event.price))
+        EventCell.currencyFormatter.usesGroupingSeparator = true
+        EventCell.currencyFormatter.numberStyle = .currency
+        EventCell.currencyFormatter.locale = Locale.current
+        EventCell.currencyFormatter.currencyCode = event.currency.iso_3
+        EventCell.currencyFormatter.currencySymbol = event.currency.symbol
+        let priceString = EventCell.currencyFormatter.string(from: NSNumber(value: event.price))
         lb_price.text = priceString
         for i in 0..<Int(round(event.user.user_rating_score)) {
             v_stars[i].fillColor = UIColor(red: 188.0/255.0, green: 188.0/255.0, blue: 188.0/255.0, alpha: 1.0)
@@ -148,7 +148,7 @@ class ELEventCell: ELCollectionViewCell {
 }
 
 //MARK: PlaceHolder
-extension ELEventCell {
+extension EventCell {
     class func size(referenceWidth:CGFloat) -> CGSize {
         let img_width = referenceWidth - 16.0
         var height = 8.0 + img_width * 9.0 / 16.0

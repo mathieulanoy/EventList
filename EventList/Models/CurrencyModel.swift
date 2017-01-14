@@ -9,7 +9,7 @@
 import UIKit
 import SwiftyJSON
 
-struct ELCurrencyModel {
+struct CurrencyModel {
 
     let currencyId:     Int
     let title:          String
